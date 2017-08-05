@@ -1,10 +1,32 @@
-body {
-  section {
-    .container {
-      text-align: center;
-      h1 {
-        color: blue;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$open: 'Open Sans', sans-serif;
+
+.container {
+  font-family: $open;
+  color: #474747;
+  nav {
+    font-size: 14px;
+    padding: 0 10px;
+    ul {
+      margin: 0;
+      padding: 30px 20px;
+      border-top: 8px solid #7dd8d2;
+      list-style: none;
+      .nav-list {
+        color: #474747;
+        text-decoration: none;
+        li {
+          margin: 0 12px;
+          padding: 5px;
+          display: inline-block;
+          text-transform: lowercase;
+          letter-spacing: -1px;
+        }
       }
     }
+  }
+  .jumbotron {
+    background-color: transparent;
+    letter-spacing: -1px;
   }
 }

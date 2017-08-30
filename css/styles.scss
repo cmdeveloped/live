@@ -5,7 +5,9 @@ $open: 'Open Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
 $lobster: 'Lobster Two', cursive;
 
-$primary: #932600;
+$primary: #000a12;
+$light: #263238;
+$lightest: #4f5b62;
 
 .container {
   font-family: $open;
@@ -39,6 +41,7 @@ $primary: #932600;
     letter-spacing: -1px;
     h2 {
       span {
+        color: $primary;
         font-family: $raleway;
       }
     }
@@ -46,6 +49,7 @@ $primary: #932600;
   .work {
     .row {
       .mylift {
+        
         img {
           max-width: 100%;
         }

@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 $open: 'Open Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
+$lobster: 'Lobster Two', cursive;
+
+$primary: #932600;
 
 .container {
   font-family: $open;
   color: #474747;
   nav {
     font-size: 14px;
-    padding: 0 10px;
+    padding: 0;
     ul {
       margin: 0;
       padding: 30px 20px;
-      border-top: 8px solid #7dd8d2;
+      border-top: 8px solid $primary;
       list-style: none;
       .nav-list {
         color: #474747;
@@ -26,7 +30,7 @@ $raleway: 'Raleway', sans-serif;
         }
       }
       .nav-list:hover {
-        color: #7dd8d2;
+        color: $primary;
       }
     }
   }
@@ -46,6 +50,21 @@ $raleway: 'Raleway', sans-serif;
           max-width: 100%;
         }
       }
+    }
+  }
+  .about {
+    padding: 20px 0;
+    background-color: $primary;
+    article {
+      p {
+        text-align: center;
+        margin: 10px;
+        color: #fff;
+      }
+    }
+    button {
+      text-align: center;
+      margin: auto;
     }
   }
 }

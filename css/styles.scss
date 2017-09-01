@@ -5,9 +5,9 @@ $open: 'Open Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
 $lobster: 'Lobster Two', cursive;
 
-$primary: #000a12;
-$light: #263238;
-$lightest: #4f5b62;
+$primary: #001c33;
+$light: #4A96AD;
+$lightest: #F5F3EE;
 
 .container {
   font-family: $open;
@@ -39,6 +39,7 @@ $lightest: #4f5b62;
   .jumbotron {
     background-color: transparent;
     letter-spacing: -1px;
+    padding: 8rem 2rem;
     h2 {
       span {
         color: $primary;
@@ -48,8 +49,8 @@ $lightest: #4f5b62;
   }
   .work {
     .row {
-      .mylift {
-        
+      margin: 20px 0;
+      .col-md-4 {
         img {
           max-width: 100%;
         }

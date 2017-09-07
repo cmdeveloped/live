@@ -65,6 +65,9 @@ $lightest: #F5F3EE;
         text-align: center;
         margin: 10px;
         color: #fff;
+        span {
+          font-family: $raleway;
+        }
       }
     }
     button {

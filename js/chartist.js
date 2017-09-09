@@ -3,7 +3,7 @@ new Chartist.Pie('#chart1', {
   series: [95]
 }, {
   donut: true,
-  donutWidth: 25,
+  donutWidth: 22,
   startAngle: 0,
   total: 100,
   showLabel: true
@@ -14,7 +14,7 @@ new Chartist.Pie('#chart2', {
   series: [90]
 }, {
   donut: true,
-  donutWidth: 25,
+  donutWidth: 22,
   startAngle: 0,
   total: 100,
   showLabel: true
@@ -25,7 +25,7 @@ new Chartist.Pie('#chart3', {
   series: [80]
 }, {
   donut: true,
-  donutWidth: 25,
+  donutWidth: 22,
   startAngle: 0,
   total: 100,
   showLabel: true

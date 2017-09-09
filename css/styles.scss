@@ -82,7 +82,6 @@ $lightest: #F5F3EE;
   }
   .work {
     text-align: center;
-    margin-top: 150px;
     h2 {
       color: $primary;
     }
@@ -122,22 +121,29 @@ $lightest: #F5F3EE;
     }
   }
   .skills {
+    text-align: center;
+    margin: 8rem 0;
+    p {
+      margin-bottom: 2rem;
+      color: $primary;
+    }
     h2 {
       text-align: center;
-      margin-bottom: 2.2rem;
       color: $primary;
     }
     .row {
       .col-md-4 {
         h4 {
           text-align: center;
+          margin-top: 20px;
           margin-bottom: 20px;
           color: $primary;
           font-family: $raleway;
         }
         .ct-chart {
+          height: 200px;
           .ct-slice-donut {
-            stroke: $primary;
+            stroke: $light;
           }
           .ct-label {
             font-size: 20px;

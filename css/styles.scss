@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Taviraj:300,400,500i');
 $open: 'Open Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
-$lobster: 'Lobster Two', cursive;
 $roboto: 'Roboto', sans-serif;
 $tavi: 'Taviraj', serif;
 
@@ -13,6 +11,7 @@ $light: #4A96AD;
 $lightest: #F5F3EE;
 
 .container {
+  border-top: 8px solid $primary;
   font-family: $open;
   color: #474747;
   nav {
@@ -21,7 +20,6 @@ $lightest: #F5F3EE;
     ul {
       margin: 0;
       padding: 30px 20px;
-      border-top: 8px solid $primary;
       list-style: none;
       .nav-list {
         color: #474747;
@@ -39,10 +37,14 @@ $lightest: #F5F3EE;
       }
     }
   }
+  section {
+    margin: 100px 0;
+  }
   .jumbotron {
     background-color: transparent;
     letter-spacing: -1px;
     padding: 8rem 2rem;
+    margin: 0;
     h2 {
       span {
         color: $primary;
@@ -50,15 +52,42 @@ $lightest: #F5F3EE;
       }
     }
   }
-  .work {
+  .service {
+    text-align: center;
+    h2 {
+      color: $primary;
+    }
     .row {
-      margin: 20px 0;
       .col-md-4 {
         img {
-          max-width: 100%;
+          margin: 20px 0;
+          transition: all 250ms ease;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 14px;
         }
       }
-      .col-md-6 {
+      .col-md-4:hover {
+        img {
+          padding-bottom: 10px;
+        }
+        h3 {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .work {
+    text-align: center;
+    h2 {
+      color: $primary;
+    }
+    .row {
+      margin: 20px 0;
+      .col-md-3 {
         img {
           max-width: 100%;
         }
@@ -66,28 +95,55 @@ $lightest: #F5F3EE;
     }
   }
   .about {
+    margin-top: 0;
     padding: 50px 0;
-    background-color: $primary;
     .row {
+      text-align: center;
       img {
         border-radius: 100%;
         height: 180px;
       }
       p {
+        padding-top: 30px;
         font-size: 14px;
-        font-family: $roboto;
+        font-family: $raleway;
         text-align: center;
-        margin: 10px;
-        color: #fff;
+        color: $primary;
         span {
           margin-right: 6px;
-          font-family: $tavi;
+          font-family: $open;
         }
       }
     }
     button {
       text-align: center;
       margin: auto;
+    }
+  }
+  .skills {
+    h2 {
+      text-align: center;
+      margin-bottom: 2.2rem;
+      color: $primary;
+    }
+    .row {
+      .col-md-4 {
+        h4 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: $primary;
+          font-family: $raleway;
+        }
+        .ct-chart {
+          .ct-slice-donut {
+            stroke: $primary;
+          }
+          .ct-label {
+            font-size: 20px;
+            fill: $primary;
+          }
+        }
+      }
     }
   }
 }

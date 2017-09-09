@@ -5,8 +5,10 @@
   <title>Collin M Smith</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   <link rel="stylesheet" href="css/styles.min.css" />
 
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -27,33 +29,13 @@
     <h4>A Full Stack Developer with an emphasis on Front End Development</h4>
   </section>
 
-  <section class="work" id="work">
-    <article class="row">
-      <div class="col-md-4">
-        <img src="assets/mylift.jpg" alt="MyLift thumb"  />
-      </div>
-      <div class="col-md-4">
-        <img src="assets/neighborhood.jpg" alt="Neighborhood Map thumb"  />
-      </div>
-      <div class="col-md-4">
-        <img src="assets/cmdeveloped.jpg" alt="cmdeveloped thumb"  />
-      </div>
-    </article>
-    <article class="row justify-content-center">
-      <div class="col-md-4">
-        <img src="assets/social.jpg" alt="social thumb"  />
-      </div>
-      <div class="col-md-4">
-        <img src="assets/perfectfit.jpg" alt="perfectfit thumb"  />
-      </div>
-    </article>
-  </section>
-
   <section class="about" id="about">
     <article class="row justify-content-center">
-      <img src="assets/me.jpg" alt="Hello!"  />
-      <p class="col-md-6">
-        <span style="font-size: 28px;">I was introduced</span> to programming by two of my college roommates while I was studying Exercise Science at Florida State University.
+      <div class="col-md-4">
+        <img src="assets/me.jpg" alt="Hello!"  />
+      </div>
+      <p class="col-md-8">
+        <span style="font-size: 26px;">I was introduced</span> to programming by two of my college roommates while I was studying Exercise Science at Florida State University.
         While in college, I found out the hard (and expensive) way that the major I was in was the wrong choice for me. After getting my
         degree, I dedicated all of my time and efforts expanding my skills as a programmer by completing rigorous full stack development
         courseworks through Udacity and CodeCademy.
@@ -61,23 +43,71 @@
     </article>
   </section>
 
-  <section class="skills" id="skills">
-    <h1>Skills</h1>
+  <section class="service">
+    <h2>What I do.</h2>
+    <p>Currently working from Franklin, TN</p>
     <article class="row">
-      <div class="col-md-3">
-
+      <div class="col-md-4" id="webapp">
+        <img src="assets/service1.png" alt="Web and App Design">
+        <h3>Web & App Design</h3>
+        <p>Mockup and design minimalistic, responsive websites and mobile applications.</p>
       </div>
-      <div class="col-md-3">
-
+      <div class="col-md-4" id="webdev">
+        <img src="assets/service2.png" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Deliver a high quality website or application, built from the ground up with both your needs and the user's needs in mind.</p>
       </div>
-      <div class="col-md-3">
-
-      </div>
-      <div class="col-md-3">
-
+      <div class="col-md-4" id="seo">
+        <img src="assets/service4.png" alt="SEO Content">
+        <h3>SEO Content</h3>
+        <p>Make sure your site can be found using search engine optimization.</p>
       </div>
     </article>
   </section>
+
+  <section class="skills">
+    <h2>Skills to create.</h2>
+    <article class="row">
+      <div class="col-md-4">
+        <h4>HTML</h4>
+        <span class="ct-chart" id="chart1"></span>
+      </div>
+      <div class="col-md-4">
+        <h4>CSS & Sass</h4>
+        <span class="ct-chart" id="chart2"></span>
+      </div>
+      <div class="col-md-4">
+        <h4>Javascript & jQuery</h4>
+        <span class="ct-chart" id="chart3"></span>
+      </div>
+    </article>
+  </section>
+
+  <section class="work" id="work">
+    <h2>My work.</h2>
+    <p>More upon request</p>
+    <article class="row justify-content-center">
+      <div class="col-md-3">
+        <img src="assets/mylift.jpg" alt="MyLift thumb"  />
+      </div>
+      <div class="col-md-3">
+        <img src="assets/neighborhood.jpg" alt="Neighborhood Map thumb"  />
+      </div>
+      <div class="col-md-3">
+        <img src="assets/cmdeveloped.jpg" alt="cmdeveloped thumb"  />
+      </div>
+    </article>
+    <article class="row justify-content-center">
+      <div class="col-md-3">
+        <img src="assets/social.jpg" alt="social thumb"  />
+      </div>
+      <div class="col-md-3">
+        <img src="assets/perfectfit.jpg" alt="perfectfit thumb"  />
+      </div>
+    </article>
+  </section>
+
+  <script src="js/chartist.js"></script>
 </body>
 
 </html>

@@ -72,7 +72,7 @@ $lightest: #F5F3EE;
       }
       .col-md-4:hover {
         img {
-          padding-bottom: 10px;
+          transform: translateY(-10px);
         }
         h3 {
           color: $primary;
@@ -82,6 +82,7 @@ $lightest: #F5F3EE;
   }
   .work {
     text-align: center;
+    margin-top: 150px;
     h2 {
       color: $primary;
     }

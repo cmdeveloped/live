@@ -1,8 +1,6 @@
-var chart1 = new Chartist.Pie('#chart1', {
-  series: [{
-    value: 95,
-    name: 'HTML'
-  }]
+new Chartist.Pie('#chart1', {
+  labels: ['95%'],
+  series: [95]
 }, {
   donut: true,
   donutWidth: 25,
@@ -11,11 +9,9 @@ var chart1 = new Chartist.Pie('#chart1', {
   showLabel: true
 });
 
-var chart2 = new Chartist.Pie('#chart2', {
-  series: [{
-    value: 90,
-    name: 'CSS'
-  }]
+new Chartist.Pie('#chart2', {
+  labels: ['90%'],
+  series: [90]
 }, {
   donut: true,
   donutWidth: 25,
@@ -24,11 +20,9 @@ var chart2 = new Chartist.Pie('#chart2', {
   showLabel: true
 });
 
-var chart3 = new Chartist.Pie('#chart3', {
-  series: [{
-    value: 80,
-    name: 'Javascript'
-  }]
+new Chartist.Pie('#chart3', {
+  labels: ['80%'],
+  series: [80]
 }, {
   donut: true,
   donutWidth: 25,

@@ -11,10 +11,10 @@ $light: #4A96AD;
 $lightest: #F5F3EE;
 
 .container {
-  border-top: 8px solid $primary;
   font-family: $open;
   color: #474747;
   nav {
+    border-top: 8px solid #001c33;
     font-size: 14px;
     padding: 0;
     ul {
@@ -43,13 +43,58 @@ $lightest: #F5F3EE;
   .jumbotron {
     background-color: transparent;
     letter-spacing: -1px;
-    padding: 8rem 2rem;
+    padding: 15rem 2rem;
     margin: 0;
+    background-image: url('../assets/background.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 25px;
     h2 {
       span {
         color: $primary;
         font-family: $raleway;
       }
+    }
+    ul {
+      padding: 10px 0 0 50px;
+      list-style: none;
+      li {
+        display: inline-block;
+        img {
+          fill: gray;
+          margin: 10px;
+          width: 30px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .about {
+    padding: 50px 0;
+    .row {
+      text-align: center;
+      img {
+        border-radius: 100%;
+        height: 180px;
+      }
+      p {
+        background-color: #fff;
+        padding: 30px;
+        font-size: 14px;
+        font-family: $raleway;
+        text-align: center;
+        color: $primary;
+        span {
+          margin-right: 6px;
+          font-family: $open;
+        }
+      }
+    }
+    button {
+      text-align: center;
+      margin: auto;
     }
   }
   .service {
@@ -80,59 +125,21 @@ $lightest: #F5F3EE;
       }
     }
   }
-  .work {
-    text-align: center;
-    h2 {
-      color: $primary;
-    }
-    .row {
-      margin: 20px 0;
-      .col-md-3 {
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-  }
-  .about {
-    margin-top: 0;
-    padding: 50px 0;
-    .row {
-      text-align: center;
-      img {
-        border-radius: 100%;
-        height: 180px;
-      }
-      p {
-        padding-top: 30px;
-        font-size: 14px;
-        font-family: $raleway;
-        text-align: center;
-        color: $primary;
-        span {
-          margin-right: 6px;
-          font-family: $open;
-        }
-      }
-    }
-    button {
-      text-align: center;
-      margin: auto;
-    }
-  }
   .skills {
     text-align: center;
-    margin: 8rem 0;
+    margin: 6rem 0;
     p {
       margin-bottom: 2rem;
       color: $primary;
     }
     h2 {
+      padding-top: 35px;
       text-align: center;
       color: $primary;
     }
     .row {
       .col-md-4 {
+        padding-bottom: 35px;
         h4 {
           text-align: center;
           margin-top: 20px;
@@ -153,4 +160,46 @@ $lightest: #F5F3EE;
       }
     }
   }
+  .work {
+    text-align: center;
+    h2 {
+      color: $primary;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        color: $primary;
+        padding: 5px 25px;
+        border-radius: 25px;
+        margin: 10px;
+        border: 1.5px solid $primary;
+      }
+      li:hover {
+        background-color: $primary;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .row {
+      margin: 20px 0;
+      .col-md-3 {
+        img {
+          max-width: 100%;
+        }
+        img:hover {
+          box-shadow: 0 10px 20px rgba(32,48,64,0.19), 0 6px 6px rgba(32,48,64,0.23);
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: $primary;
+  color: #fff !important;
+}
+.hide {
+  display: none;
 }

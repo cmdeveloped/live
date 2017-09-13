@@ -266,11 +266,13 @@ $lightest: #F5F3EE;
   background-color: $primary;
   color: #fff !important;
 }
-.hide {
-  display: none;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 77.1%;
+
+@media screen and (max-width: 766px) {
+  .work {
+    .row {
+      .col-md-4 {
+        padding-bottom: 20px;
+      }
+    }
+  }
 }

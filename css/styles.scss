@@ -276,6 +276,9 @@ body {
   background-color: $primary;
   color: #fff !important;
 }
+.hide {
+  display: none;
+}
 
 @media screen and (max-width: 766px) {
   .work {

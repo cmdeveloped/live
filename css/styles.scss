@@ -14,7 +14,7 @@ $lightest: #F5F3EE;
   font-family: $open;
   color: #474747;
   nav {
-    border-top: 8px solid #001c33;
+    border-top: 8px solid $primary;
     font-size: 14px;
     padding: 0;
     ul {
@@ -28,7 +28,7 @@ $lightest: #F5F3EE;
         text-decoration: none;
         #logo {
           font-size: 45px;
-          transform: translateY(5px);
+          font-weight: bold;
         }
         li {
           transition: .5s;
@@ -39,6 +39,7 @@ $lightest: #F5F3EE;
           letter-spacing: -1px;
         }
         li:hover {
+          cursor: pointer;
           transform: translateY(-5px);
         }
       }
@@ -164,7 +165,7 @@ $lightest: #F5F3EE;
         .ct-chart {
           height: 200px;
           .ct-slice-donut {
-            stroke: $light;
+            stroke: $primary;
           }
           .ct-label {
             font-size: 20px;
@@ -234,6 +235,29 @@ $lightest: #F5F3EE;
     }
     a:hover {
       text-decoration: none;
+    }
+  }
+  footer {
+    text-align: center;
+    color: #d4d4d4;
+    ul {
+      margin: 0;
+      padding: 20px 0 0;
+      border-top: 1px solid $light;
+      list-style: none;
+      li {
+        display: inline-block;
+        svg {
+          fill: #d4d4d4;
+          margin: 10px;
+          width: 25px;
+          border-radius: 5px;
+          transition: .5s;
+        }
+        svg:hover {
+          fill: $primary;
+        }
+      }
     }
   }
 }

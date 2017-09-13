@@ -11,12 +11,19 @@ $light: #4A96AD;
 $lightest: #F5F3EE;
 
 body {
+  padding-top: 95px;
   font-family: $open;
   color: #474747;
-  nav {
+  .navbar {
     border-top: 8px solid $primary;
     font-size: 14px;
     padding: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    transition: 1s;
+    z-index: 2;
     ul {
       margin: 0;
       padding: 20px;
@@ -81,6 +88,7 @@ body {
           transition: .5s;
         }
         svg:hover {
+          cursor: pointer;
           fill: $primary;
         }
       }
@@ -234,6 +242,7 @@ body {
       }
     }
     a:hover {
+      cursor: pointer;
       text-decoration: none;
     }
   }
@@ -255,6 +264,7 @@ body {
           transition: .5s;
         }
         svg:hover {
+          cursor: pointer;
           fill: $primary;
         }
       }
